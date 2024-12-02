@@ -140,7 +140,7 @@ img {
 }
 
 .section {
-  padding-block: 4rem 6rem;
+  padding-block: 4rem 4rem;
 }
 
 .mango-images {
@@ -265,6 +265,7 @@ img {
   padding-block: 1rem;
   align-items: center;
   justify-content: space-between;
+
   
 }
 
@@ -273,8 +274,9 @@ img {
   display: flex;
   align-items: center;
   animation: move-rtl 2s linear infinite;
-  width: 200px;
+  width: 500px;
   justify-content: center;
+  padding-block: 2rem 2rem !important;
 }
 
 @keyframes move-rtl{
@@ -356,36 +358,45 @@ img {
 }
 
 /*Footer*/
+
 #footer{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr ; 
   background-color: #110907;
+  margin-top: 50px;
+  padding: 40px 10%;
+  
+}
+.logo-img{
+  padding-top: 30px;
+  width: 100%;
+  margin: 5px;
 }
 
+.div-col1{
+  margin-left: 80px;
+}
 #footer div{
-  display: flex;
+  display: flex ;
   flex-direction: column;
-  row-gap: 5px;
-  padding: 40px;
+  gap: 10px;
 }
 #footer h3{
   color: #e95d29;
+  font-size: 1.3rem;
 }
 
 #footer p{
   color: white;
 }
+.social-link{
+  display: flex;
+}
+
 .footer-title{
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
-
-.double-info{
-  display: flex;
-  flex-direction:  column;
-  gap: 20px;
-}
-
 
 .footer-item{
   font-size: 16px;
@@ -395,41 +406,33 @@ img {
   text-decoration: none;
 }
 
-.footer-item i{
-  width: 15px;
-}
-
 .footer-item:hover{
   color: #f4ba46;
+  
 }
-
-.part-baja{
-  display: flex !important;
-}
-.social-link {
-  display: flex;
-  justify-content: center;
-  gap: 15px;;
-}
-.fotter-img{
-  width: 20px;
-  transition: 0.3s;
- }
 
  .footer-item:hover{
   transform: scale(1.1);
  }
 
- #footer div, .double-info, .part-baja, .part-arriba{
-  border: none;
+ #footer .social-link{
+  display: -webkit-inline-box;
  }
 
-#copyright{
-  display: flex;
-  justify-content: center;
-}
+ .fotter-img{
+  width: 0.7;
+  transition: 0.3s ease;
+  gap: 30px;
+ }
+
+ .footer-item:hover{
+  cursor: pointer;
+ }
 
 
+
+ /*Responsive*/
+/*Pantallas grandes*/ 
 @media screen and (min-width: 1150px) {
   .container {
     margin-inline: auto;
@@ -447,6 +450,7 @@ img {
     font-size: var(--normal-font-size);
   }
 
+
   .nav-menu {
     display: flex;
     column-gap: 3rem;
@@ -458,10 +462,20 @@ img {
     flex-direction: row;
     column-gap: 4rem;
   }
+  /*Footer*/ 
+  #footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ; 
+    background-color: #110907;
+    margin-top: 50px;
+    padding: 40px 10%;
+    
+  }
 }
+/*Laptos*/
 @media screen and (max-width: 1150px) {
   .mango-container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
   .service-container {
     grid-template-columns: 1fr 1fr 1fr;
@@ -480,18 +494,50 @@ img {
   .donate-icons div:nth-child(3) {
     width: 90px;
   }
+
+  .home-description {
+    color: var(--white-color);
+    margin-bottom: 1.1rem;
+    font-size: 12px;
+    margin-bottom: 30px;
+  
+  }
+
+
+  .mango-container {
+    grid-template-columns: 580px;
+    column-gap: 4rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*Footer*/ 
+  #footer{
+    display: grid;
+    grid-template-columns: 2fr;
+    row-gap: 50px;
+    justify-content: center !important;
+    
+  }
+
+  .logo-img{
+    padding-top: 30px;
+    margin: 5px;
+    width: max-content;
+  }
+  .div-col1{
+    margin-left: 0px;
+  }
+
+  #footer div{
+    gap: 10px;
+  }
   
 }
-
+/*Telefono moviles vertical*/
 @media screen and (max-width: 768px) {
   .mango-container {
     grid-template-columns: 1fr;
-  }
-  .mango-images {
-    display: none;
-  }
-  .mango-data {
-    text-align: end;
   }
   .mango-images::before {
     width: 300px;
@@ -528,12 +574,62 @@ img {
   .marquee-container div {
     height: 50px;
   }
-  .marquee-container {
+  .marquee-container, .description {
     display: flex;
     padding-block: .5rem;
     align-items: center;
     justify-content: space-between;
     gap: .5rem;
+  }
+
+  .mango-container {
+    grid-template-columns: 1fr;
+  }
+  .mango-images {
+    width: auto;
+    margin: 20px;
+    align-items: center;
+  }
+  .mango-images::before {
+    display: none;
+  }
+
+  .mango-data {
+    align-items: center;
+    padding: 40px;
+  }
+  .home-description, .bioplastico-description, .description {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .description {
+    display: flex;
+    align-items: center;
+  }
+
+  .mango-title, .home-title, .bioplastico-title{
+    font-size: 2rem;
+    padding-bottom: 10px;
+
+  }
+
+  .mango-description, .bioplastico-description{
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+  .donate-icons{
+    padding: 8%;
+  }
+
+  .donate-form{
+    padding: 20px;
+  }
+  .form-btn, .button{
+    justify-content: center;
+  }
+
+  .div-col, .double-info, .FinalPart{
+    justify-content: center;
   }
   
 }
