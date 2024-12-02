@@ -5,20 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cugo</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    />
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav class="nav container">
         <a href="" class="nav-logo">
           <img src="assets/img/CUGO_LOGO.svg" alt="" />
         </a>
-        <div class="nav-menu">
+        <div class="nav-menu" id="nav-menu">
           <ul class="nav-list">
             <li><a href="" class="nav-link">Home</a></li>
             <li><a href="" class="nav-link">Who we are</a></li>
             <li><a href="" class="nav-link">Contact Us</a></li>
             <li><a href="" class="nav-link">Work with us</a></li>
           </ul>
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-large-line"></i>
+          </div>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-apps-2-line"></i>
         </div>
       </nav>
     </header>
@@ -29,9 +39,9 @@
           <h2 class="home-title">¿Qué es cugo?</h2>
           <p class="home-description">
             Nuestro enfoque es la creación de productos sostenibles y
-            tecnológicamente avanzados.<br> En la producción de una pieza textil
+            tecnológicamente avanzados. En la producción de una pieza textil
             pequeña y versátil, utilizando materiales naturales como la cáscara
-            de mango, coco, <br> fibras de frutas y vegetales. Esta pieza servirá
+            de mango, coco, fibras de frutas y vegetales. Esta pieza servirá
             como base para futuros productos y procesos innovadores.
           </p>
           <div class="home-buttons">
@@ -50,7 +60,7 @@
             <h2 class="mango-title">¿Porque el mango?</h2>
             <p class="mango-description">
               En la época de cosecha en la zona caribeña, especialmente en
-              <span>Malagana, Bolívar</span>, el mango es una fuente importante de producción
+              Malagana, Bolívar, el mango es una fuente importante de producción
               agrícola. Durante esta temporada, la producción de mango puede
               alcanzar hasta 1.2 toneladas por hectárea. Sin embargo,
               lamentablemente, una gran parte de esta producción,
@@ -73,11 +83,11 @@
           <p class="bioplastico-description">
             Un bioplástico es un tipo de plástico que se fabrica utilizando
             materiales biológicos o renovables en lugar de fuentes de origen
-            fósil, como el petróleo. <br>Estos materiales biológicos pueden incluir
+            fósil, como el petróleo. Estos materiales biológicos pueden incluir
             almidón de maíz, caña de azúcar, almidón de patata, celulosa, entre
-            otros. <br> <span>Los bioplásticos pueden ser biodegradables, lo que significa
-            que pueden descomponerse en elementos naturales bajo <br> ciertas
-            condiciones ambientales, o pueden ser compostables.</span>
+            otros. Los bioplásticos pueden ser biodegradables, lo que significa
+            que pueden descomponerse en elementos naturales bajo ciertas
+            condiciones ambientales, o pueden ser compostables.
           </p>
           <div class="bioplastico-buttons">
             <a href="" class="button-ghost"> Click here! </a>
@@ -93,7 +103,7 @@
             <div class="service-image">
               <img src="assets/img/service1.svg" alt="" />
             </div>
-            <h4 class="service-item-title">Cuidando el Medio Ambiente</h4>
+            <h4 class="service-item-title">Cuidado del Medio ambiente</h4>
             <p class="service-item-description">
               Lorem ipsum dolor sit amet, consectetur adipiscing
             </p>
@@ -133,10 +143,7 @@
           <div><img src="assets/img/LogoMarquee.svg" alt="" /></div>
           <div><img src="assets/img/mangoIcon.svg" alt="" /></div>
           <div><img src="assets/img/LogoCugoWhite.svg" alt="" /></div>
-          <div><img src="assets/img/mangoIcon.svg" alt="" /></div>
-          <div><img src="assets/img/LogoMarquee.svg" alt="" /></div>
-          <div><img src="assets/img/mangoIcon.svg" alt="" /></div>
-          <div><img src="assets/img/LogoCugoWhite.svg" alt="" /></div>
+          
         </div>
       </section>
 
@@ -177,6 +184,46 @@
           </div>
         </div>
       </section>
+      <section id="footer">
+        <div class="Logo-img">
+          <img src="assets/img/CUGO_LOGO (1).svg" alt="" srcset="">
+        </div>
+        <div>
+          <h3 id="link-Title">Menu</h3>
+          <a class="footer-item">Home</a>
+          <a class="footer-item">Who we are</a>
+          <a class="footer-item">Contact Us</a>
+          <a class="footer-item">Work with us</a>
+        </div>
+        <div class="doble-info">
+          <div class="part-arriba">
+            <h3 class="link-Title">Contacto</h3>
+            <a class="footer-item">cugo@contact.com</a>
+            <a class="footer-item">(+57) 555-555-555</a>
+          </div>
+          <div class="part-baja">
+              <h3 class="link-Title">Redes Sociales</h3>
+              <div class="social-link">
+                <img class="fotter-img"  src="assets/img/sociaLinks/facebeook.svg" alt="facebook">
+                <img class="fotter-img" src="assets/img/sociaLinks/instagram.svg" alt="instagram">
+                <img class="fotter-img" src="assets/img/sociaLinks/twitter.svg" alt="twitter">
+                <img class="fotter-img" src="assets/img/sociaLinks/Github.svg" alt="Git">
+           </div>
+          </div>
+        </div>
+        <div class="FinalPart">
+            <h3 class="link-Title">Localizacion</h3>
+            <p class="footer-items">Colombia, Cartagena</p>
+            <p class="footer-items">Crr 61 # 4-10 Sur</p>
+         </div>
+      </section>
+
+      <section class="copyright">
+        <p> @Project Management Inc. 2024 - </p>
+      </section>
+
+
     </main>
+    <script src="main.js"></script>
   </body>
 </html>
