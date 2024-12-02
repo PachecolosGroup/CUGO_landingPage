@@ -114,6 +114,8 @@ img {
   font-weight: 500;
   line-height: 1.4;
   margin-bottom: 30px;
+  padding-left: 200px;
+  padding-right: 200px;
 
 }
 
@@ -170,6 +172,7 @@ img {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.4;
+  
 }
 
 .mango-description span {
@@ -215,6 +218,8 @@ img {
   font-size: 20px;
   font-weight: 400;
   line-height: 1.4;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 .bioplastico-description span{
