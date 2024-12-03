@@ -1,18 +1,18 @@
 const navMenu = document.getElementById('nav-menu'),
-      navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close');
+    navToggle = document.getElementById('nav-toggle'),
+    navClose = document.getElementById('nav-close');
 
 /* Menu show*/
-if(navToggle){
-    navToggle.addEventListener('click', ()=>{
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu');
     })
 }
 
 /* Menu Hidden */
 
-if(navClose){
-    navClose.addEventListener('click', ()=>{
+if (navClose) {
+    navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu')
     })
 }
@@ -26,4 +26,14 @@ const linkAction = () => {
     navMenu.classList.remove("show-menu");
 }
 
-navLink.forEach((link) => link.addEventListener('click', linkAction))    
+navLink.forEach((link) => link.addEventListener('click', linkAction))
+
+/*SCROLL UP */
+const scrollUp = () => {
+    const scrollup = document.getElementById("scroll-up")
+
+    this.scrollY >= 350 ? scrollup.classList.add("show-scroll")
+        : scrollup.classList.remove("show-scroll")
+}
+window.addEventListener('scroll', scrollUp)
+
