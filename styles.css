@@ -31,7 +31,9 @@
   box-sizing: border-box;
   font-family: "Kanit", sans-serif;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 ul {
   list-style: none;
 }
@@ -438,10 +440,6 @@ img {
 #footer p{
   color: white;
 }
-.social-link{
-  display: flex;
-}
-
 .footer-title{
   font-size: 1.5rem;
   margin-bottom: 10px;
@@ -465,13 +463,26 @@ img {
  }
 
  #footer .social-link{
-  display: -webkit-inline-box;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+ }
+
+ #footer .social-link a{
+   font-size: 25px;
+   color: #fff;
+ }
+ #footer .social-link a:hover{
+  transform: scale(1.1);
+  color: #f4ba46;
  }
 
  .fotter-img{
   width: 0.7;
   transition: 0.3s ease;
   gap: 30px;
+
  }
 
  .footer-item:hover{
@@ -490,8 +501,8 @@ img {
     position: initial;
   }
 
-  .nav__toggle,
-  .nav__close {
+  .nav-toggle,
+  .nav-close {
     display: none;
   }
 
