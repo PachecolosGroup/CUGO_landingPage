@@ -5,3 +5,4 @@ In a project made for Project Management, we created a whole new visual represen
 
 Developed in groups with 
 Jhonatan Martinez https://github.com/Jhomartic 
+Andres Grau https://github.com/caquebale11
