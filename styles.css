@@ -43,7 +43,6 @@ a {
 }
 
 img {
-  display: block;
   object-fit: cover;
   max-width: 100%;
   height: auto;
@@ -325,9 +324,9 @@ img {
   display: flex;
   align-items: center;
   animation: move-rtl 2s linear infinite;
-  width: 500px;
+  width: 200px;
   justify-content: center;
-  padding-block: 2rem 2rem !important;
+  padding-block: .5rem .5rem !important;
 }
 
 @keyframes move-rtl{
@@ -349,7 +348,19 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 3rem;
+  column-gap: 2rem;
+  background-color: #fff;
+
+}
+
+.donate-icons div img{
+  background-color: #f4ba4655;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  border: 2px solid rgba(255, 255, 255, 1);
+  box-shadow: 7px 6px 2px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
 }
 
 .donate-container{
@@ -509,7 +520,13 @@ img {
   .nav-link {
     font-size: var(--normal-font-size);
   }
-
+  .donate-icons{
+    column-gap: 0rem;
+  }
+  .donate-icons div img{
+    width: calc(100% - 40%);
+  }
+ 
 
   .nav-menu {
     display: flex;
